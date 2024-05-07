@@ -1,13 +1,15 @@
 import express from 'express';
+import 'dotenv/config';
+import { router } from './routes';
 
 const server = express(); //instancia do servidor
+
+server.use(express.json()); 
+
+server.use(router); //servidor faz uso das rotas que criamos na pasta routes
 
 interface Teste {
 
 }
-
-server.get('/', (req, res) => {
-    return res.send('Olá, dev!');
-});
 
 export {server};
