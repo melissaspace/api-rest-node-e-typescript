@@ -8,8 +8,4 @@ server.use(express.json());
 
 server.use(router); //servidor faz uso das rotas que criamos na pasta routes
 
-interface Teste {
-
-}
-
 export {server};
