@@ -4,6 +4,7 @@ import { validation } from '../../shared/middleware';
 
 interface ICidade {
   nome: string;
+  estado: string;
 }
 interface IFilter {
   filter?: string;
@@ -15,7 +16,7 @@ export const createValidation = validation((getSchema) => ({
     estado: yup.string().required().min(3),
   })),
   query: getSchema<IFilter>(yup.object().shape({
-    filter: yup.string().required().min(3),
+    filter: yup.string().optional().min(3),
   })),
 }));
 
