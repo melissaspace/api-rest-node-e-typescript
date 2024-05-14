@@ -1,6 +1,5 @@
 import { StatusCodes } from "http-status-codes";
 import { testServer } from "../jest.setup";
-import { number } from "yup";
 
 describe('Cidades - Create', () => {
 
