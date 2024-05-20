@@ -23,5 +23,5 @@ export const development: Knex.Config = {
 
 export const test: Knex.Config = {
   ...development,
-  connection: ':memory:',
+  connection: ':memory:', //quando terminar a execução do teste o bd é destruído
 };
