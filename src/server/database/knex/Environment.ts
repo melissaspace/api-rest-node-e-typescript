@@ -1,4 +1,4 @@
-import {Knex} from 'knex';
+import { Knex } from 'knex';
 import path from 'path';
 
 export const development: Knex.Config = {
